@@ -1,0 +1,52 @@
+{
+  "name": "kova-extension",
+  "version": "0.0.1",
+  "displayName": "Kova Language Support",
+  "description": "Syntax highlighting + icons for Kova language",
+  "publisher": "Samuel Oguntimehin",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": ["Programming Languages"],
+  "activationEvents": ["onLanguage:kova"],
+  "main": "./extension.js",
+  "contributes": {
+    "languages": [
+      {
+        "id": "kova",
+        "aliases": ["Kova", "kova"],
+        "extensions": [".kova"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "kova",
+        "scopeName": "source.kova",
+        "path": "./syntaxes/kova.tmLanguage.json"
+      }
+    ],
+    "iconThemes": [
+      {
+        "id": "kova-icons",
+        "label": "Kova Icons",
+        "path": "./icons/kova-icon-theme.json"
+      }
+    ]
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kova-lang/Kova-VS-Code-Extension.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/kova-lang/Kova-VS-Code-Extension/issues"
+  },
+  "homepage": "https://github.com/kova-lang/Kova-VS-Code-Extension#readme"
+}
