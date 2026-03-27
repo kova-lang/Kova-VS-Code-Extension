@@ -1,0 +1,10 @@
+{
+  "iconDefinitions": {
+    "kova": {
+      "iconPath": "./kova.svg"
+    }
+  },
+  "fileExtensions": {
+    "kova": "kova"
+  }
+}
