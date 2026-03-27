@@ -13,7 +13,15 @@
   "activationEvents": [
     "onLanguage:kova"
   ],
-  "main": "./extension.js",
+  "main": "./out/extension.js",
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -w -p ./"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.80.0",
+    "typescript": "^6.0.2"
+  },
   "contributes": {
     "languages": [
       {
@@ -43,10 +51,6 @@
       }
     ]
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "compile": "echo \"No Build Script Yet\""
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kova-lang/Kova-VS-Code-Extension.git"
@@ -58,8 +62,5 @@
   "bugs": {
     "url": "https://github.com/kova-lang/Kova-VS-Code-Extension/issues"
   },
-  "homepage": "https://github.com/kova-lang/Kova-VS-Code-Extension#readme",
-  "devDependencies": {
-    "typescript": "^6.0.2"
-  }
+  "homepage": "https://github.com/kova-lang/Kova-VS-Code-Extension#readme"
 }
