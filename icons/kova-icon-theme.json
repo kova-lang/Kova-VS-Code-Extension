@@ -1,11 +1,13 @@
 {
+  "extends": "vs-seti",
+
   "iconDefinitions": {
     "kova": {
       "iconPath": "./kova.svg"
     }
   },
+
   "fileExtensions": {
     "kova": "kova"
-  },
-  "fileNames": {}
+  }
 }

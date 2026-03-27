@@ -10,9 +10,6 @@
   "categories": [
     "Programming Languages"
   ],
-  "activationEvents": [
-    "onLanguage:kova"
-  ],
   "main": "./out/extension.js",
   "scripts": {
     "compile": "tsc -p ./",
